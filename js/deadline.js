@@ -5,7 +5,7 @@ function deadline() {
     $.ajax({
         url : "js/txt.json",
         data : "",
-        type : "POST",
+        type : "GET",
         dataType : "json",
         success : function (data) {
             if(data.code == "0000"){
