@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chis博客</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link type="text/css" rel="stylesheet" media="all" href="css/jquery.mmenu.all.css" />
+    <link rel="stylesheet" href="css/bootstrap-checkbox.css">
+    <link rel="stylesheet" href="css/bootstrap-dropdown-multilevel.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome4.5.min.css">
+    <link rel="icon" type="image/ico" href="images/1.ico" />
+    <link href="css/minimal.css" rel="stylesheet">
+    <style>
+        body{
+            overflow: auto;
+            /*background: burlywood;*/
+            background: #3f4e62;
+        }
+        .sm-left{
+            /*padding-left: 150px;*/
+        }
+        .ulStyle{
+            overflow: auto;
+        }
+        .ulStyle li{
+            color: white;
+        }
+        .footer_p{
+            padding: 0;
+            margin: 0;
+            padding-top: 10px;
+            margin-top: 5px;
+            border-top: 1px solid;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+        .content h1{
+            border-bottom: 1px solid;
+            cursor: pointer;
+        }
+        /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+        ::-webkit-scrollbar
+        {
+            width: 7px;
+            background: none;
+        }
+
+        /*定义滚动条轨道 内阴影+圆角*/
+        ::-webkit-scrollbar-track
+        {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background: none;
+        }
+
+        /*定义滑块 内阴影+圆角*/
+        ::-webkit-scrollbar-thumb
+        {
+            height:30px;
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+<div class="col-md-12 text-center sm-left">
+
+
+
+    <h1 class="timeline-heading"><strong>This</strong> month</h1>
+
+    <ol class="timeline" id="content_div"></ol>
+
+    <h1 class="timeline-heading"><strong>Older</strong></h1>
+
+
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/deadline.js"></script>
+</html>
